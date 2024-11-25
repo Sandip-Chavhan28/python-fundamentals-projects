@@ -1,0 +1,57 @@
+class Student :
+  print("Student collage information : \n")
+  Section = 'V'
+  Branch = 'CSE'
+  Subject = 'Python'
+  def __init__(self,n,r,regis) :
+    self.name = n
+    self.rollnum = r
+    self.regisnum = regis
+
+
+  def percentage(self,marks) :
+      p = 0
+      for i in marks :
+          p = i + p
+      self.per = (p/500)*100
+
+
+  def info(self) :
+    print(f"The name of the student is {self.name} \nroll number is {self.rollnum} \nregistration number is {self.regisnum}")
+    print(f'Section is {self.Section} \nBranch is {self.Branch} \nSub is {self.Subject} \nPersentage of {self.name} is : {self.per} \n \n') 
+
+
+
+a = Student("Sandip Chavhan",44,24070088)
+r = [45,65,48,96,99]
+a.percentage(r)
+a.info()
+
+b = Student("Samay Ratode ",40,24070654)
+m = [92,45,98,94,91]
+b.percentage(m)
+b.info()
+
+c = Student("Vansh Baghel",68,24070596)
+k = [98,86,98,97,45]
+c.percentage(k)
+c.info()
+
+d = Student("Shekhar Chutiya",49,24075896)
+l = [98,68,28,98,48]
+d.percentage(l)
+d.info()
+
+l=[]
+l.append(a)
+l.append(b)
+l.append(c)
+l.append(d)
+
+m=l[0].per
+i=0
+for x in l:
+    if x.per>m:
+        m=x.per
+        i+=1
+l[i].info()
