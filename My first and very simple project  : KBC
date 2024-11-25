@@ -1,1 +1,63 @@
+print(" * Welcome to Kaun Banega Crorepati (KBC) program * \n " )
+print("500 rs ke liye pahila question aapke samne : \n")
+print("Current Railway Minister of India is ?")
+option = ["1. Mamta Banegi ", "2. Ram Vilas ","3. Ashwini Vaishae ","4. Piyush goyal"]
+for i in option:
+    print(i)
+a=int(input("Enter a answer number :"))
+if (a==3) :
+   print("Your answer is correct \n")
+   print("5000 rs ke liye agla question aapke samne : \n")
+   print("What does not grow on tree according to a popular Hindi saying?")
+   print("1.Money \t 2.Leaves \n 3.flowers \t 4.fruits")
+   c=int(input("Enter a answer of second Question :"))
+   if (c==1) :
+       
+      print("Your answer is correct \n")
+      print("10000 rs ke liye agla question aapke samne : \n")
+      print("Which god is also known as Gauri Nandan?")
+      print("1.Ganesha \t 2.Indra \n 3.Agni \t 4.Hanuman")
+      b=int(input("Enter a answer of second Question :"))
+      
+      if (b==1) :
+       print("Your answer is correct \n")
+       print("50000 rs ke liye agla question aapke samne : \n")
+       print("Which city is known as the Pink City of India?")
+       print("1.Nagpur \t 2.Jaipur \n 3.kochi \t 4.maysore")
+       d=int(input("Enter a answer of second Question :"))
+       
+       if (d==2) :
+         print("Your answer is correct \n")
+         print("100000 rs ke liye agla question aapke samne : \n")
+         print("Who wrote India's National Anthem?")
+         print("1.RK Narayan \t 2.Rabindranath Tagore \n 3.Lal Bahadur Shastri \t 4.Chetan Bhagat")
+         e=int(input("Enter a answer of second Question :"))
+         if (e==2) :
+           print("Your answer is correct \n")
+           print("Congratulations")
+           print("You are win 100000")
+           
+         else :
+           print("oops your answer is wrong")
+           print("Correct answer is 2. Rabindranath Tagore")
+           print("You are win 50,000 rs \n Thank you !!!\n")
 
+       else :
+        print("oops your answer is wrong")
+        print("Correct answer is 2. Jaipur")
+        print("You are win 10,000 rs \n Thank you !!!\n")
+        
+      else :
+        print("oops your answer is wrong")
+        print("Correct answer is 1. Ganesha")
+        print("You are win 5000 rs \n Thank you !!!\n")
+    
+   else :
+      print("oops your answer is wrong")
+      print("Correct answer is 1. Money")
+      print("You are win 500 rs \n Thank you !!!\n")
+      
+else :
+    print("oops your answer is wrong")
+    print("Correct answer is 3. Ashwini  Vaishae")
+    print("You are win 0 rs \n Thank you !!!\n")
