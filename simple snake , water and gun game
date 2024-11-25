@@ -1,0 +1,62 @@
+# simple snake , water and gun game 
+# code by sandip chavhan
+import random 
+
+print("Welcome to Mind fresh game ")
+print()
+
+print("Lets play the game \n")
+# for Expand the game
+for m in range(1,6) :
+
+  # all about player choice
+  list = ["Enter you choice : ","1 for Snake" ,   "2 for Water ", "3 for Gun ","4 for exit" ]  
+  for i in list :  
+    print(i)  
+
+  try :
+    a = int(input("\nEnter your choice : "))
+    p = "\nyour choice is "
+
+    if (a==1) :
+      print(p,"Snake")
+    elif (a == 2) :
+      print(p,"Watter")
+    elif (a==3)  :
+      print(p,"Gun")
+    elif (a==4) :
+      print("\nThanks you for playing the game \n")
+      break
+   
+
+  except ValueError :
+     print("Entered number is invalid")
+
+
+  if not (0<a<4) :
+    raise ValueError("Enter Choice ber not other than number  ")
+
+  # all output of computer choice
+  list1 = [1,2,3]
+  q = ("computer choice is  ")
+  b = random.choice(list1)
+  if (b==1) :
+    print(q,"Snake")
+  elif (b == 2) :
+    print(q,"Watter")
+  elif (b==3)  :
+    print(q,"Gun")
+
+  # condition for winning 
+
+  if (a == b) :
+    print("\n** Game is tie **\n")
+  elif (a == 1 and b==2) :
+    print("\n** You win the game **\n")
+  elif (a == 2 and b==3) :
+   print("\n** You win the game **\n")
+  elif (a == 3 and b==1) :
+   print("\n** You win the game **\n")
+  else :
+   print("\n** Computer is win the Game **\n ")
+
