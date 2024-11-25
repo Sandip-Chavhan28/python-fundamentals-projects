@@ -1,0 +1,30 @@
+a = input("Enter a any sentence :")
+list = [ 'a','e','i','o','u']
+vovel = 0
+space = 0
+c = 0
+for i in a :
+    if (i in list) :
+        vovel = vovel + 1
+    elif ( i == " ") :
+        space = space + 1
+    else  :
+        c = c +  1
+print("Number of consonent is ",c)
+print("Number of voval is ",vovel)
+print("Number of space is ",space)
+
+# its for conting lower and upper case word
+
+a = input("Enter a any sentence :")
+
+lower = 0
+upper = 0
+for i in a :
+    if (i.islower()) :
+        lower = lower + 1
+    elif ( i.isupper()) :
+        upper = upper + 1
+
+print("Number of lowar is ",lower)
+print("Number of upper is ",upper)
