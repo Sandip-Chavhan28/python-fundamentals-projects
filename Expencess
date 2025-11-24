@@ -1,0 +1,50 @@
+# Simple Expenses Tracker Project
+print("\n*********** Welcome to Expence Traker ***********\n")
+expenses = 0
+Information = [] #This list store Dictiory of each expences
+
+while True:  
+    print("======= Menu ======")
+    print("1. Add Expense")
+    print("2. View All Expenses")
+    print("3. View Total Spending")
+    print("4. Exit")
+    print("===================")
+
+    choice = int(input("Enter your choice (1-4): "))
+
+    if choice == 1:
+        Date = input("Enter Date (DD-MM-YYYY): ")
+        Category = input("Enter Category (Food , Books , Dress): ")
+        Description = input("Enter Description: ")
+        Amount = int(input("Enter Amount: "))
+
+        expenses += Amount
+        Info = {
+            "Date" : Date ,
+            "Category" : Category,
+            "Description" : Description,
+            "Amount" : Amount
+        }
+        Information.append(Info)
+        print("\nExpenses Added Succesfully\n")
+
+    elif choice == 2:
+        if len(Information) == 0:
+            print("\nNo expenses recorded yet!\n")
+        else:
+            i = 1
+            for Eachexpense in Information:
+                print(f"\nExpense {i} Information:")
+                print(f"\nDate = {Eachexpense["Date"]}\nCategory = {Eachexpense["Category"]}\nDescription = {Eachexpense["Description"]}\nAmmount = {Eachexpense["Amount"]}\n")
+                i += 1
+
+    elif choice == 3:
+        print("\n****** Total Expenses = Rs", expenses, "******\n")
+
+    elif choice == 4:
+        print("\n====== Thank you for visiting ======\n")
+        break
+
+    else:
+        print("Invalid Input! Please enter a number between 1 to 4.")
